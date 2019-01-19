@@ -5,13 +5,15 @@
         <ResourceDictionary Source="Geometries.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
+    <Style TargetType="Path">
+        <Setter Property="Stretch" Value="Uniform"/>
+    </Style>
+
     <Style x:Key="PathBaseStyle" TargetType="Path">
         <Setter Property="Stretch" Value="Uniform"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="FlowDirection" Value="LeftToRight"/>
     </Style>
-
-    <Style BasedOn="{StaticResource PathBaseStyle}" TargetType="Path"/>
 
     <!--搜索-->
     <Style x:Key="SearchPathStyle" BasedOn="{StaticResource PathBaseStyle}" TargetType="Path">
